@@ -4,6 +4,7 @@ import Image from 'next/image';
 import traveloLogo from "public/assets/travelo-logo-header.png"
 import Nav from './Nav';
 import Search from './Search';
+import Button from 'components/Button';
 
 const Header = () => {
     return (
@@ -15,8 +16,11 @@ const Header = () => {
                         <Search />
                     </div>
 
-                    <div className="flex">
+                    <div className="flex gap-5">
                         <Nav />
+                        <Button className='w-[190px]'>
+                            Masuk
+                        </Button>
                     </div>
                 </div>
             </Container>
