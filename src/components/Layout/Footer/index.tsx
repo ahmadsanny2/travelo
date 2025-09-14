@@ -2,6 +2,7 @@ import Container from "components/Container"
 import styles from "./Footer.module.css"
 import Image from 'next/image';
 import traveloLogo from 'public/assets/travelo-logo-header.png';
+import FooterInfo from "./FooterInfo";
 
 const Footer = () => {
     return (
@@ -11,6 +12,56 @@ const Footer = () => {
                     <figure>
                         <Image src={traveloLogo} alt="Travelo Logo" placeholder="blur" height="98" width="136" />
                     </figure>
+
+                    <div className="flex flex-1 justify-between ml-[106px]">
+                        <FooterInfo
+                            title="Info"
+                            content={[
+                                {
+                                    label: 'Tentang Kami',
+                                    href: '/'
+                                },
+                                {
+                                    label: 'Testimonials',
+                                    href: '/'
+                                },
+                                {
+                                    label: 'Kontak',
+                                    href: '/'
+                                }
+                            ]}
+                        />
+                        <FooterInfo
+                            title="Perusahaan"
+                            content={[
+                                {
+                                    label: 'Syarat dan Ketentuan',
+                                    href: '/'
+                                },
+                                {
+                                    label: 'Kebijakan Privasi',
+                                    href: '/'
+                                },
+                                {
+                                    label: 'Blog',
+                                    href: '/'
+                                },
+                                {
+                                    label: 'Bantuan Pelayanan',
+                                    href: '/'
+                                }
+                            ]}
+                        />
+
+                         <FooterInfo
+                            title="Info"
+                            content={[
+                                'Bandung Barat, Jawa Barat, Indonesia',
+                                '0813-xxxx-xxxx',
+                                'travelo@gmail.com'
+                            ]}
+                        />
+                    </div>
                 </div>
             </Container>
 
