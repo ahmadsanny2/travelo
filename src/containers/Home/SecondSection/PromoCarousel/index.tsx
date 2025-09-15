@@ -24,7 +24,7 @@ const PromoCarousel = () => {
                     </button>
                 }
                 customLeftArrow={
-                    <button type="button" aria-label="Go to previous slide" className="absolute z-50 right-0 opacity-50 hover:opacity-100">
+                    <button type="button" aria-label="Go to previous slide" className="absolute z-50 left-0 opacity-50 hover:opacity-100">
                         <img src="assets/icons/left-arrow-rounded.svg"
                             alt=""
                             width="75"
