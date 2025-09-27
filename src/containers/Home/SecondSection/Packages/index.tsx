@@ -14,8 +14,6 @@ const Packages = () => {
                 <PackageCard />
                 <PackageCard />
                 <PackageCard />
-                <PackageCard />
-                <PackageCard />
             </div>
         </>
     )
