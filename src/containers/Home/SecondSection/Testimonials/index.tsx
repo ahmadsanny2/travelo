@@ -8,7 +8,7 @@ const Testimonials = () => {
             </h3>
             <p className="text-heading-4 mb-4">Pendapat pelanggan tentang kami</p>
 
-            <div className="flex justify-between">
+            <div className="grid lg:grid-cols-3 gap-10 justify-between">
                 {Array.from({ length: 4 }).map((_, index) => {
                     return (
                         <TestimonialCard key={index}/>

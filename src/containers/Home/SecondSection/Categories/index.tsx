@@ -7,7 +7,7 @@ const Categories = () => {
                 Kategori Tempat
             </h3>
 
-            <div className="flex justify-between">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 lg:gap-10 justify-between">
                 {Array.from({ length: 6 }).map((_, index) => (
                     <CategoryCard key={index}/>
                 ))}

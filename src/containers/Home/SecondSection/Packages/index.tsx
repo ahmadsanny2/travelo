@@ -10,7 +10,7 @@ const Packages = () => {
                 Paket terbaik yang sering dipilih oleh pelanggan
             </p>
 
-            <div className="flex justify-between">
+            <div className="grid lg:grid-cols-3 gap-10 justify-between">
                 <PackageCard />
                 <PackageCard />
                 <PackageCard />

@@ -3,7 +3,7 @@ import Rating from "./Rating"
 
 const TestimonialCard = () => {
     return (
-        <article className="flex flex-col bg-white rounded-xl shadow w-[288px] h-[281px] p-4">
+        <article className="flex flex-col bg-white rounded-xl shadow p-4">
             <div className="flex mb-4">
                 <figure className="relative rounded-full overflow-hidden h-16 w-16 mr-3">
                     <Image

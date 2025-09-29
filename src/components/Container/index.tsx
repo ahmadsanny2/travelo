@@ -5,9 +5,9 @@ type Props = {
     size?: string
 }
 
-const Container = ({ children, size = "xl" }: Props) => {
+const Container = ({ children }: Props) => {
     return (
-        <div className={`${size === "xl" ? "max-w-screen-xl" : "max-w-screen-lg"} mx-auto`}>
+        <div className="container mx-auto">
             {children}
         </div>
     )

@@ -3,7 +3,7 @@ import Button from 'components/Button';
 
 const PromoCard = () => {
     return (
-        <article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex">
+        <article className="bg-white shadow-lg rounded-xl overflow-hidden w-full h-full flex">
             <figure className="relative w-[212px] h-full">
                 <Image
                     src="/assets/home/borobudur.png"

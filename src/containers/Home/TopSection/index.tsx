@@ -22,7 +22,7 @@ const TopSection = () => {
                         </Button>
                     </div>
 
-                    <div className="flex gap-40 mx-auto">
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-40 mx-auto">
                         <InfoItem
                             label='+30'
                             subLabel='Negara'

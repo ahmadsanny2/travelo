@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const PackageCard = () => {
     return (
-        <article className="flex flex-col bg-white rounded-xl shadow-lg overflow-hidden w-[393px]">
+        <article className="flex flex-col bg-white rounded-xl shadow-lg overflow-hidden">
             <figure className="relative w-full h-[268px]">
                 <Image
                     src="/assets/home/cliff.png"
