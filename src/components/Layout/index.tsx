@@ -6,12 +6,12 @@ type Props = {
     children: ReactNode
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, noFooter=false }: Props) => {
     return (
         <>
             <Header />
             {children}
-            <Footer />
+            {noFooter ? null : <Footer />}
         </>
     )
 }

@@ -53,7 +53,7 @@ const Footer = () => {
                             ]}
                         />
 
-                         <FooterInfo
+                        <FooterInfo
                             title="Info"
                             content={[
                                 'Bandung Barat, Jawa Barat, Indonesia',
