@@ -3,7 +3,7 @@ import NavItem from '../NavItem';
 
 const Nav = () => {
     return (
-        <nav className="flex items-center gap-5">
+        <nav className="flex flex-col lg:flex-row lg:items-center lg:gap-5">
             <NavItem
                 label="Beranda"
                 href="/"

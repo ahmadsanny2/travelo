@@ -3,7 +3,7 @@ import searchIcon from 'public/assets/icons/search-icon.svg';
 
 const Search = () => {
     return (
-        <form className="flex items-center ml-8">
+        <form className="hidden xl:flex items-center ml-8">
             <input type="text"
                 placeholder="Kategori | Lokasi"
                 className="border border-gray-50 px-4 py-3 rounded-l-md text-sm text-gray-50" />

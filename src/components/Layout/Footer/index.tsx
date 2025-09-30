@@ -8,12 +8,12 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Container size="lg">
-                <div className="flex bg-white p-16">
+                <div className="flex flex-col lg:flex-row justify-center bg-white px-5 py-10 gap-20">
                     <figure>
                         <Image src={traveloLogo} alt="Travelo Logo" placeholder="blur" height="98" width="136" />
                     </figure>
 
-                    <div className="flex flex-1 justify-between ml-[106px]">
+                    <div className="grid lg:grid-cols-3 justify-between">
                         <FooterInfo
                             title="Info"
                             content={[

@@ -8,7 +8,7 @@ type Props = {
 const NavItem = ({ label, href = "/" }: Props) => {
     return (
         <Link href={href}>
-            <a className="text-heading-4 text-gray-70 font-label font-bold">
+            <a className="hover:bg-blue-100 hover:text-white p-2 text-heading-4 text-gray-70 font-label font-bold rounded">
                 {label}
             </a>
         </Link>

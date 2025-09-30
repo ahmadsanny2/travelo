@@ -2,7 +2,7 @@ import TestimonialCard from "./TestimonialCard"
 
 const Testimonials = () => {
     return (
-        <>
+        <div className="px-5">
             <h3 className="text-heading font-label font-bold pt-14 mb-1">
                 Testimonials Pelanggan
             </h3>
@@ -15,7 +15,7 @@ const Testimonials = () => {
                     )
                 })}
             </div>
-        </>
+        </div>
     )
 }
 

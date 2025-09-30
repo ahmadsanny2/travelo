@@ -3,13 +3,14 @@ import PromoCard from "./PromoCard"
 
 const PromoCarousel = () => {
     return (
-        <>
+        <div className="px-5">
             <h3 className="text-heading-3 text-white font-label font-bold pt-14 mb-4">
                 Promo Liburan
             </h3>
 
             <Carousel
                 className="py-5"
+                itemClass="mx-2"
                 containerClass="carousel-container"
                 arrows
                 centerMode={false}
@@ -34,14 +35,22 @@ const PromoCarousel = () => {
                 partialVisible
                 responsive={{
                     desktop: {
-                        breakpoint: {
-                            max: 3000,
-                            min: 720
-                        },
+                        breakpoint: { max: 3000, min: 1024 },
                         items: 2,
-                        paritialVisibilityGutter: 100
-                    }
+                        partialVisibilityGutter: 100,
+                    },
+                    tablet: {
+                        breakpoint: { max: 1024, min: 640 },
+                        items: 1,
+                        partialVisibilityGutter: 80,
+                    },
+                    mobile: {
+                        breakpoint: { max: 640, min: 0 },
+                        items: 1,
+                        partialVisibilityGutter: 40,
+                    },
                 }}
+
             >
                 <PromoCard />
                 <PromoCard />
@@ -51,7 +60,7 @@ const PromoCarousel = () => {
                 <PromoCard />
                 <PromoCard />
             </Carousel>
-        </>
+        </div>
     )
 }
 

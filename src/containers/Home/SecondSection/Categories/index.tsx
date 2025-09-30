@@ -2,7 +2,7 @@ import CategoryCard from "./CategoryCard"
 
 const Categories = () => {
     return (
-        <>
+        <div className="px-5">
             <h3 className="text-heading-3 text-gray-100 font-label font-bold pt-14 mb-8">
                 Kategori Tempat
             </h3>
@@ -12,7 +12,7 @@ const Categories = () => {
                     <CategoryCard key={index}/>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 

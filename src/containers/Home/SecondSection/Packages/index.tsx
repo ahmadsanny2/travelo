@@ -2,7 +2,7 @@ import PackageCard from "./PackageCard"
 
 const Packages = () => {
     return (
-        <>
+        <div className="px-5">
             <h3 className="text-heading-3 text-white font-label font-bold pt-14 mb-1">
                 Paket Liburan Populer
             </h3>
@@ -15,7 +15,7 @@ const Packages = () => {
                 <PackageCard />
                 <PackageCard />
             </div>
-        </>
+        </div>
     )
 }
 

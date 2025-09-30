@@ -13,6 +13,7 @@ const PromoCard = () => {
                     objectPosition="center"
                 />
             </figure>
+            
             <div className="flex flex-1 flex-col justify-center p-4">
                 <p className="text-heading-4 text-gray-100 font-label font-bold">
                     Borobudur, Yogyakarta
@@ -42,7 +43,7 @@ const PromoCard = () => {
                     Berangkat: 27-11-2027 10:00
                 </p>
 
-                <div className="flex justify-between gap-3">
+                <div className="flex flex-col md:flex-row justify-between gap-3">
                     <Button fullWidth outlined>
                         Lihat Detail
                     </Button>
