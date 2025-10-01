@@ -34,7 +34,7 @@ const Login = () => {
                             className=""
                         />
 
-                        <a href="#" className="text-heading-5 text-blue-100 font-semibold mt-8 mb-4 hover:underline">
+                        <a href="#" className="text-heading-5 text-blue-100 font-semibold hover:underline">
                             Lupa password?
                         </a>
 
