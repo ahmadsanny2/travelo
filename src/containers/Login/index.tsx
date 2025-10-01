@@ -1,6 +1,7 @@
 import Layout from "components/Layout"
 import styles from "./Login.module.css"
 import Button from "components/Button"
+import Input from "components/Input"
 
 const Login = () => {
     return (
@@ -17,10 +18,28 @@ const Login = () => {
                     </div>
 
                     <form action="" className="flex flex-col gap-5 mt-8">
-                        <input type="email" name="" id="" className="p-2" placeholder="Email" />
-                        <input type="password" name="" id="" className="p-2" placeholder="Password" />
+                        <Input
+                            label="Email"
+                            type="email"
+                            name="email"
+                            placeholder="Masukkan alamat email"
+                            className=""
+                        />
+
+                        <Input
+                            label="Password"
+                            type="password"
+                            name="password"
+                            placeholder="Masukkan password"
+                            className=""
+                        />
+
+                        <a href="#" className="text-heading-5 text-blue-100 font-semibold mt-8 mb-4 hover:underline">
+                            Lupa password?
+                        </a>
+
                         <Button>Masuk</Button>
-                        </form>
+                    </form>
                 </div>
             </section>
         </Layout>
