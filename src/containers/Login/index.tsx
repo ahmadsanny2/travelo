@@ -17,13 +17,13 @@ const Login = () => {
                         </a>
                     </div>
 
-                    <form action="" className="flex flex-col gap-5 mt-8">
+                    <form action="" className="flex flex-col mt-8">
                         <Input
                             label="Email"
                             type="email"
                             name="email"
                             placeholder="Masukkan alamat email"
-                            className=""
+                            className="mb-6"
                         />
 
                         <Input
@@ -34,12 +34,21 @@ const Login = () => {
                             className=""
                         />
 
-                        <a href="#" className="text-heading-5 text-blue-100 font-semibold hover:underline">
+                        <a href="#" className="text-heading-5 text-blue-100 font-semibold mt-8 mb-4 hover:underline">
                             Lupa password?
                         </a>
 
-                        <Button>Masuk</Button>
+
+                        <Button type="submit" fullWidth>Masuk</Button>
                     </form>
+
+                    <p className="text-heading-5 text-gray-70 my-8 text-center">Atau masuk dengan</p>
+                    <Button className="mb-4" variant="google">
+                        Masuk dengan Google
+                    </Button>
+                    <Button variant="facebook">
+                        Masuk dengan Facebook
+                    </Button>
                 </div>
             </section>
         </Layout>
