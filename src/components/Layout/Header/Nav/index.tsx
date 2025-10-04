@@ -14,7 +14,7 @@ const Nav = () => {
             />
             <NavItem
                 label="Paket"
-                href="/"
+                href="#package"
             />
             <NavItem
                 label="Testimonials"

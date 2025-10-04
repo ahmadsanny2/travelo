@@ -8,60 +8,58 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Container size="lg">
-                <div className="flex flex-col lg:flex-row justify-center bg-white px-5 py-10 gap-20">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-white px-5 py-10 gap-5">
                     <figure>
                         <Image src={traveloLogo} alt="Travelo Logo" placeholder="blur" height="98" width="136" />
                     </figure>
 
-                    <div className="grid lg:grid-cols-3 justify-between">
-                        <FooterInfo
-                            title="Info"
-                            content={[
-                                {
-                                    label: 'Tentang Kami',
-                                    href: '/'
-                                },
-                                {
-                                    label: 'Testimonials',
-                                    href: '/'
-                                },
-                                {
-                                    label: 'Kontak',
-                                    href: '/'
-                                }
-                            ]}
-                        />
-                        <FooterInfo
-                            title="Perusahaan"
-                            content={[
-                                {
-                                    label: 'Syarat dan Ketentuan',
-                                    href: '/'
-                                },
-                                {
-                                    label: 'Kebijakan Privasi',
-                                    href: '/'
-                                },
-                                {
-                                    label: 'Blog',
-                                    href: '/'
-                                },
-                                {
-                                    label: 'Bantuan Pelayanan',
-                                    href: '/'
-                                }
-                            ]}
-                        />
+                    <FooterInfo
+                        title="Info"
+                        content={[
+                            {
+                                label: 'Tentang Kami',
+                                href: '/'
+                            },
+                            {
+                                label: 'Testimonials',
+                                href: '/'
+                            },
+                            {
+                                label: 'Kontak',
+                                href: '/'
+                            }
+                        ]}
+                    />
+                    <FooterInfo
+                        title="Perusahaan"
+                        content={[
+                            {
+                                label: 'Syarat dan Ketentuan',
+                                href: '/'
+                            },
+                            {
+                                label: 'Kebijakan Privasi',
+                                href: '/'
+                            },
+                            {
+                                label: 'Blog',
+                                href: '/'
+                            },
+                            {
+                                label: 'Bantuan Pelayanan',
+                                href: '/'
+                            }
+                        ]}
+                    />
 
-                        <FooterInfo
-                            title="Info"
-                            content={[
-                                'Bandung Barat, Jawa Barat, Indonesia',
-                                '0813-xxxx-xxxx',
-                                'travelo@gmail.com'
-                            ]}
-                        />
-                    </div>
+                    <FooterInfo
+                        title="Info"
+                        content={[
+                            'Bandung Barat, Jawa Barat, Indonesia',
+                            '0813-xxxx-xxxx',
+                            'travelo@gmail.com'
+                        ]}
+                    />
                 </div>
             </Container>
 
