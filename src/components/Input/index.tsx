@@ -23,6 +23,7 @@ const Input = ({
 
     const handleEyeClick = () => {
         setHidePassword((prevState) => !prevState)
+
         if (type === 'password' && !hidePassword) {
             setInputType('text')
         } else {
@@ -33,7 +34,7 @@ const Input = ({
 
 
     return (
-        <label htmlFor="name" className={clsx(styles.label, className)}>
+        <label htmlFor={name} className={clsx(styles.label, className)}>
             <div className="mb-3">{label}</div>
 
             <input

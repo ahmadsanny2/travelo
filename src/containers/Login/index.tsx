@@ -3,6 +3,7 @@ import styles from "./Login.module.css"
 import Button from "components/Button"
 import Input from "components/Input"
 import { useComponentLogic } from "./hooks"
+import { REG_EXP } from "constants/regexp"
 
 const Login = () => {
     const { register, handleSubmit, onSubmit, errors } = useComponentLogic()
@@ -22,6 +23,13 @@ const Login = () => {
 
                     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-8">
                         <Input
+                            register={register}
+                            errors={errors}
+                            required={{ value: true, message: "Email harus diisi." }}
+                            pattern={{
+                                value: REG_EXP.email,
+                                message:"Gunakan format email dengan benar."
+                            }}
                             label="Email"
                             type="email"
                             name="email"
@@ -30,6 +38,9 @@ const Login = () => {
                         />
 
                         <Input
+                            register={register}
+                            errors={errors}
+                            required={{ value: true, message: "Password harus diisi." }}
                             label="Password"
                             type="password"
                             name="password"
