@@ -3,9 +3,9 @@ import Rating from "./Rating"
 
 const TestimonialCard = () => {
     return (
-        <article className="flex flex-col bg-white rounded-xl shadow p-4">
+        <article className="flex flex-col p-4 bg-white shadow rounded-xl">
             <div className="flex mb-4">
-                <figure className="relative rounded-full overflow-hidden h-16 w-16 mr-3">
+                <figure className="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
                     <Image
                         src="/assets/home/profile.png"
                         alt="Profile"
@@ -16,16 +16,16 @@ const TestimonialCard = () => {
                 </figure>
 
                 <div className="flex flex-col">
-                    <p className="text-heading-4 text-gray-100 font-label font-bold mb-1">Keyla Madina</p>
-                    <p className="text-heading-5 text-gray-50 font-bold">Bandung Barat, Jawa Barat</p>
+                    <p className="mb-1 font-bold text-gray-100 text-heading-4 font-label">John Doe</p>
+                    <p className="font-bold text-heading-5 text-gray-50">Bandung Barat, Jawa Barat</p>
                 </div>
             </div>
 
             <Rating />
 
-            <p className="text-heading-5 text-gray-70 my-4">Nyari makanan halal gampang banget udah ada tour guidenya. Tour guidenya juga ramah enak diajak ngobrol, dan penginapannya pun nyaman</p>
+            <p className="my-4 text-heading-5 text-gray-70">Nyari makanan halal gampang banget udah ada tour guidenya. Tour guidenya juga ramah enak diajak ngobrol, dan penginapannya pun nyaman</p>
 
-            <p className="text-heading-5 text-gray-100 font-bold">Nusa Panida, Bali</p>
+            <p className="font-bold text-gray-100 text-heading-5">Nusa Panida, Bali</p>
             <p className="text-heading-6 text-gray-50">17-10-2020</p>
         </article>
     )
